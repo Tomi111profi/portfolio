@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TomX | Roblox Developer</title>
+    <title>TomX | Roblox Developer Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
@@ -10,147 +10,192 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Segoe UI", Arial, sans-serif;
         }
 
         body {
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            color: white;
-            min-height: 100vh;
-        }
-
-        header {
-            padding: 60px 20px;
+            background-color: #0b0b0b;
+            color: #ffffff;
             text-align: center;
+            line-height: 1.6;
         }
 
-        header h1 {
-            font-size: 3rem;
-        }
-
-        header span {
-            color: #00ffd5;
-        }
-
-        header p {
-            margin-top: 15px;
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-
-        section {
-            max-width: 1000px;
+        .container {
+            max-width: 1100px;
             margin: auto;
-            padding: 40px 20px;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+            margin-bottom: 10px;
+        }
+
+        h1 span {
+            color: #00ffcc;
         }
 
         h2 {
+            margin-top: 60px;
             margin-bottom: 20px;
-            color: #00ffd5;
+            font-size: 2.2rem;
+            color: #00ffcc;
         }
 
-        ul {
-            list-style: none;
-        }
-
-        ul li {
-            padding: 10px 0;
+        p {
+            max-width: 800px;
+            margin: 15px auto;
             font-size: 1.05rem;
+            opacity: 0.9;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .skill-box {
+            background: #141414;
+            border-radius: 15px;
+            padding: 25px;
+            transition: 0.3s;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-6px);
+            background: #1c1c1c;
+        }
+
+        .skill-box h3 {
+            color: #00ffcc;
+            margin-bottom: 10px;
         }
 
         .button {
             display: inline-block;
-            margin-top: 25px;
-            padding: 12px 25px;
-            background: #00ffd5;
+            margin-top: 40px;
+            padding: 14px 34px;
+            background: #00ffcc;
             color: #000;
-            text-decoration: none;
             font-weight: bold;
-            border-radius: 8px;
+            text-decoration: none;
+            border-radius: 30px;
             cursor: pointer;
             transition: 0.3s;
         }
 
         .button:hover {
-            background: #00c9aa;
+            background: #00cfa8;
+            transform: scale(1.05);
         }
 
         .gallery {
             display: none;
-            margin-top: 30px;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
         }
 
         .gallery img {
             width: 100%;
-            border-radius: 10px;
-            transition: 0.3s;
+            border-radius: 18px;
+            transition: 0.35s;
+            box-shadow: 0 0 25px rgba(0,255,204,0.15);
         }
 
         .gallery img:hover {
-            transform: scale(1.05);
+            transform: scale(1.08);
+        }
+
+        .project-link {
+            margin-top: 20px;
         }
 
         footer {
-            text-align: center;
+            margin-top: 80px;
             padding: 30px;
-            opacity: 0.7;
             font-size: 0.9rem;
+            opacity: 0.6;
         }
     </style>
 </head>
 
 <body>
 
-<header>
-    <h1>TomX <span>(Donut)</span></h1>
-    <p>Roblox Developer • Scripter • System Builder</p>
-</header>
+<div class="container">
 
-<section>
+    <h1>TomX <span>(Donut)</span></h1>
+    <p>Roblox Developer • Scripter • System Designer</p>
+
     <h2>About Me</h2>
     <p>
-        Hi! I'm TomX, also known as Donut. I’ve been programming and scripting for over
-        <strong>4 years</strong>, continuously improving my skills and working on various Roblox projects.
+        Hi! My name is <strong>TomX</strong>, also known as <strong>Donut</strong>.
+        I’ve been programming and scripting for over <strong>4 years</strong>,
+        mainly focusing on Roblox game development.
     </p>
-</section>
+    <p>
+        Throughout the years, I have worked on multiple systems and projects,
+        constantly improving my code quality, structure, and performance.
+        I enjoy creating clean, optimized, and user-friendly game mechanics.
+    </p>
 
-<section>
-    <h2>What I Can Help With</h2>
-    <ul>
-        <li>🛒 Shop Systems</li>
-        <li>🎒 Inventory Systems</li>
-        <li>🚀 Spawn Systems</li>
-        <li>🛡️ Admin Systems</li>
-        <li>⚙️ Basic to Intermediate Game Systems</li>
-    </ul>
+    <h2>What I Can Do</h2>
+
+    <div class="skills">
+        <div class="skill-box">
+            <h3>🛒 Shop Systems</h3>
+            <p>Custom in-game shops with currencies, UI, and data saving.</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>🎒 Inventory Systems</h3>
+            <p>Item inventories with DataStore support and clean interfaces.</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>🚀 Spawn Systems</h3>
+            <p>Advanced spawn handling, checkpoints, and teleport logic.</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>🛡️ Admin Systems</h3>
+            <p>Moderation tools, admin commands, and permission systems.</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>⚙️ Other Systems</h3>
+            <p>Basic to intermediate mechanics, UI logic, and scripting.</p>
+        </div>
+    </div>
 
     <div class="button" onclick="toggleGallery()">View My Work</div>
 
     <div class="gallery" id="gallery">
-        <img src="images/project1.png" alt="Project 1">
-        <img src="images/project2.png" alt="Project 2">
-        <img src="images/project3.png" alt="Project 3">
+        <img src="images/project1.png" alt="">
+        <img src="images/project2.png" alt="">
+        <img src="images/project3.png" alt="">
     </div>
-</section>
 
-<section>
     <h2>Projects</h2>
     <p>
-        I am currently working on <strong>2 projects</strong>, and <strong>1 project is already completed</strong>.
+        I am currently working on <strong>2 active projects</strong>,
+        and <strong>1 project has already been completed</strong>.
     </p>
-    <p style="margin-top:10px;">
-        🎮 Finished game:<br>
-        <a class="button" href="https://www.roblox.com/games/101765677791299/Wave-tower" target="_blank">
-            Play Wave Tower
-        </a>
-    </p>
-</section>
 
-<footer>
-    © 2026 TomX | Roblox Developer
-</footer>
+    <div class="project-link">
+        <a class="button" href="https://www.roblox.com/games/101765677791299/Wave-tower" target="_blank">
+            Play Finished Game – Wave Tower
+        </a>
+    </div>
+
+    <footer>
+        © 2026 TomX • Roblox Developer Portfolio
+    </footer>
+
+</div>
 
 <script>
     function toggleGallery() {
